@@ -1,10 +1,22 @@
+import founderPhoto from '@assets/image_1762743706876.png';
+
 export default function FounderMessage() {
   return (
     <section id="founder" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-16" data-testid="text-founder-title">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-founder-title">
           Message from the Founder
         </h2>
+        
+        <div className="flex justify-center mb-12">
+          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-white" data-testid="img-founder">
+            <img
+              src={founderPhoto}
+              alt="Niten Luthra, Founder"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
         
         <div className="space-y-8">
           <div className="text-center mb-8">
@@ -27,16 +39,10 @@ export default function FounderMessage() {
             </p>
           </div>
           
-          <div className="text-right pt-4 mb-12">
+          <div className="text-right pt-4">
             <p className="text-lg font-medium italic" data-testid="text-founder-signature">
               — Niten Luthra, Founder
             </p>
-          </div>
-          
-          <div className="mt-12 flex justify-center">
-            <div className="w-full max-w-md aspect-square rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border flex items-center justify-center shadow-sm" data-testid="container-founder-image">
-              <p className="text-muted-foreground text-center px-8">Founder Photo Placeholder</p>
-            </div>
           </div>
         </div>
       </div>

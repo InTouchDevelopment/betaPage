@@ -17,11 +17,8 @@ export default function HeroSection() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
               Helping Busy Professionals Authentically Connect
             </h1>
-            <p className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+            <p className="text-2xl md:text-3xl font-semibold text-foreground" data-testid="text-hero-description">
               Build Relationship Capital and Boost Wellness
-            </p>
-            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl" data-testid="text-hero-description">
-              In today's fast-paced workplace, professionals struggle to build and sustain authentic relationships. At [Product Name], we're reimagining how technology facilitates genuine human connection—transforming everyday interactions into opportunities for empathy, belonging, and thriving teams.
             </p>
           </div>
           
