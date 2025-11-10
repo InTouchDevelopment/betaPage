@@ -44,60 +44,52 @@ export default function ContactSection() {
           </div>
         </div>
         
-        <div className="bg-card rounded-3xl shadow-md border border-border p-8 md:p-12 mb-12">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <Input
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  data-testid="input-contact-name"
-                />
-              </div>
-              
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  data-testid="input-contact-email"
-                />
-              </div>
+        <div className="max-w-xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-3" data-testid="text-focus-group-title">
+            Join Our Focus Group
+          </h3>
+          <p className="text-center text-muted-foreground mb-8" data-testid="text-focus-group-subtitle">
+            Be part of building a tool that helps people reconnect in a real, human way
+          </p>
+          
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium mb-2">
+                Name
+              </label>
+              <Input
+                id="name"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+                data-testid="input-contact-name"
+              />
             </div>
             
             <div>
-              <Textarea
-                placeholder="Your Message"
-                rows={6}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              <label htmlFor="email" className="block text-sm font-medium mb-2">
+                Email
+              </label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="your.email@example.com"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                data-testid="input-contact-message"
+                data-testid="input-contact-email"
               />
             </div>
             
             <Button type="submit" size="lg" className="w-full" data-testid="button-contact-submit">
-              Send Message
+              Join the Focus Group
             </Button>
+            
+            <p className="text-sm text-center text-muted-foreground" data-testid="text-privacy-note">
+              No spam, we promise. Your privacy matters to us.
+            </p>
           </form>
-        </div>
-        
-        <div className="text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-accent/10" data-testid="container-contact-email">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-              <Mail className="w-5 h-5 text-primary" />
-            </div>
-            <div>
-              <div className="text-sm font-medium text-muted-foreground">Or email us at</div>
-              <a href="mailto:hello@example.com" className="text-lg font-semibold hover:text-accent transition-colors">
-                hello@example.com
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
