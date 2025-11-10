@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Vision', href: '#why' },
+    { name: 'Message from Founder', href: '#founder' },
     { name: 'About', href: '#team' },
     { name: 'Get Involved', href: '#contact' },
   ];
@@ -53,15 +54,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:block">
-            <Button 
-              onClick={() => scrollToSection('#contact')}
-              data-testid="button-contact-nav"
-            >
-              Get Involved
-            </Button>
-          </div>
-
           <button
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -89,13 +81,6 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button 
-              className="w-full"
-              onClick={() => scrollToSection('#contact')}
-              data-testid="button-contact-mobile"
-            >
-              Get Involved
-            </Button>
           </div>
         </div>
       )}

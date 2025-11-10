@@ -13,8 +13,8 @@ export default function Home() {
       <main className="pt-20">
         <HeroSection />
         <WhySection />
-        <TeamSection />
         <FounderMessage />
+        <TeamSection />
         <ContactSection />
       </main>
       <Footer />
