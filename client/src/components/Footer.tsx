@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-muted-foreground">
-            © 2025 ProductName. All rights reserved.
+            © 2025 InTouch. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary" data-testid="link-footer-privacy">

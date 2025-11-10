@@ -33,7 +33,7 @@ export default function Navbar() {
               }}
               data-testid="link-logo"
             >
-              ProductName
+              InTouch
             </a>
           </div>
 
