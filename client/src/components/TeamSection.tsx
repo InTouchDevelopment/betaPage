@@ -46,7 +46,7 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section id="team" className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24 bg-muted/50">
+    <section id="team" className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="max-w-5xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16" data-testid="text-team-title">
           The Team
@@ -59,7 +59,7 @@ export default function TeamSection() {
               className="flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1"
               data-testid={`card-team-member-${index}`}
             >
-              <div className="w-48 h-48 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5 p-1">
+              <div className="w-48 h-48 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-accent/15 to-primary/15 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
                   <img
                     src={member.image}

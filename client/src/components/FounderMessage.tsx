@@ -2,19 +2,21 @@ import founderPhoto from '@assets/image_1762743706876.png';
 
 export default function FounderMessage() {
   return (
-    <section id="founder" className="pt-16 md:pt-24 lg:pt-32 pb-8 md:pb-12 lg:pb-16 bg-muted/30">
+    <section id="founder" className="pt-16 md:pt-24 lg:pt-32 pb-8 md:pb-12 lg:pb-16 bg-gradient-to-br from-accent/5 via-background to-primary/5">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-founder-title">
           A Message from the Founder
         </h2>
         
         <div className="flex justify-center mb-12">
-          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-white" data-testid="img-founder">
-            <img
-              src={founderPhoto}
-              alt="Niten Luthra, Founder"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg p-1 bg-gradient-to-br from-accent/20 to-primary/20" data-testid="img-founder">
+            <div className="w-full h-full rounded-full overflow-hidden bg-background">
+              <img
+                src={founderPhoto}
+                alt="Niten Luthra, Founder"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
         

@@ -40,7 +40,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-muted/50">
+    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-accent/8 via-background to-primary/8">
       <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8" data-testid="text-contact-title">
@@ -67,7 +67,7 @@ export default function ContactSection() {
               className="bg-background rounded-2xl p-8 text-center shadow-sm border border-border/50"
               data-testid={`card-benefit-${index}`}
             >
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent/20 to-primary/15 flex items-center justify-center">
                 <benefit.icon className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-lg font-semibold mb-2" data-testid={`text-benefit-title-${index}`}>
