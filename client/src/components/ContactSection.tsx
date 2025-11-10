@@ -24,15 +24,24 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 lg:py-32">
+    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6" data-testid="text-contact-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8" data-testid="text-contact-title">
             Want to Get Involved?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions or just want to chat? We're always here and happy to connect. Drop us a message and we'll get back to you with a smile!
-          </p>
+          
+          <div className="space-y-4 max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl leading-relaxed" data-testid="text-contact-intro">
+              Long days. Endless to-do lists. The nonstop juggle of work, life, and everything in between.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground" data-testid="text-contact-challenge">
+              Staying truly connected—with yourself and with others—can start to feel out of reach.
+            </p>
+            <p className="text-xl md:text-2xl font-semibold text-accent mt-6" data-testid="text-contact-cta">
+              Help us change that
+            </p>
+          </div>
         </div>
         
         <div className="bg-card rounded-3xl shadow-md border border-border p-8 md:p-12 mb-12">
@@ -77,36 +86,17 @@ export default function ContactSection() {
           </form>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="space-y-2" data-testid="container-contact-email">
-            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
-              <Mail className="w-6 h-6 text-primary" />
+        <div className="text-center">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-accent/10" data-testid="container-contact-email">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+              <Mail className="w-5 h-5 text-primary" />
             </div>
-            <div className="font-semibold">Email</div>
-            <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary block">
-              hello@example.com
-            </a>
-          </div>
-          
-          <div className="space-y-2" data-testid="container-contact-phone">
-            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
-              <Phone className="w-6 h-6 text-primary" />
+            <div>
+              <div className="text-sm font-medium text-muted-foreground">Or email us at</div>
+              <a href="mailto:hello@example.com" className="text-lg font-semibold hover:text-accent transition-colors">
+                hello@example.com
+              </a>
             </div>
-            <div className="font-semibold">Phone</div>
-            <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary block">
-              +1 (234) 567-890
-            </a>
-          </div>
-          
-          <div className="space-y-2" data-testid="container-contact-address">
-            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
-              <MapPin className="w-6 h-6 text-primary" />
-            </div>
-            <div className="font-semibold">Address</div>
-            <p className="text-muted-foreground">
-              123 Innovation Street<br />
-              Tech City, TC 12345
-            </p>
           </div>
         </div>
       </div>
