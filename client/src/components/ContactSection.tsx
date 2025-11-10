@@ -124,6 +124,10 @@ export default function ContactSection() {
               Join the Focus Group
             </Button>
             
+            <p className="text-sm text-center font-medium text-accent" data-testid="text-early-adopters">
+              Join 60+ early adopters
+            </p>
+            
             <p className="text-sm text-center text-muted-foreground" data-testid="text-privacy-note">
               No spam, we promise. Your privacy matters to us.
             </p>
