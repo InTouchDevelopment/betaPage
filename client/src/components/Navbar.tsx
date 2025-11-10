@@ -9,7 +9,8 @@ export default function Navbar() {
     { name: 'Meet the Product', href: '#product' },
     { name: "Why We're Building", href: '#why' },
     { name: 'Meet the Team', href: '#team' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Message from Founder', href: '#founder' },
+    { name: 'Want to Get Involved', href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -33,7 +34,7 @@ export default function Navbar() {
               }}
               data-testid="link-logo"
             >
-              InTouch
+              [Product Name]
             </a>
           </div>
 
@@ -56,10 +57,10 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <Button 
-              onClick={() => scrollToSection('#signup')}
-              data-testid="button-signup-nav"
+              onClick={() => scrollToSection('#contact')}
+              data-testid="button-contact-nav"
             >
-              Sign Up
+              Get Involved
             </Button>
           </div>
 
@@ -92,10 +93,10 @@ export default function Navbar() {
             ))}
             <Button 
               className="w-full"
-              onClick={() => scrollToSection('#signup')}
-              data-testid="button-signup-mobile"
+              onClick={() => scrollToSection('#contact')}
+              data-testid="button-contact-mobile"
             >
-              Sign Up
+              Get Involved
             </Button>
           </div>
         </div>

@@ -24,15 +24,15 @@ export default function HeroSection() {
               Build Relationship Capital and Boost Wellness
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl mb-8" data-testid="text-hero-description">
-              In today's fast-paced workplace, professionals struggle to build and sustain authentic relationships. At InTouch, we're reimagining how technology facilitates genuine human connection—transforming everyday interactions into opportunities for empathy, belonging, and thriving teams.
+              In today's fast-paced workplace, professionals struggle to build and sustain authentic relationships. At [Product Name], we're reimagining how technology facilitates genuine human connection—transforming everyday interactions into opportunities for empathy, belonging, and thriving teams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={() => scrollToSection('#signup')}
+                onClick={() => scrollToSection('#contact')}
                 data-testid="button-hero-primary"
               >
-                Get Started
+                Get Involved
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 

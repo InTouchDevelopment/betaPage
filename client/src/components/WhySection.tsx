@@ -3,7 +3,7 @@ export default function WhySection() {
     <section id="why" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-why-title">
-          Why We're Building InTouch
+          Why We're Building [Product Name]
         </h2>
         
         <div className="space-y-6">
@@ -12,7 +12,7 @@ export default function WhySection() {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-1">
-            At InTouch, we're reimagining how technology can facilitate and nurture genuine human connection. In a world where people are more digitally linked yet emotionally distant, our platform bridges that gap—transforming everyday workplace interactions into opportunities for empathy and belonging.
+            At [Product Name], we're reimagining how technology can facilitate and nurture genuine human connection. In a world where people are more digitally linked yet emotionally distant, our platform bridges that gap—transforming everyday workplace interactions into opportunities for empathy and belonging.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-2">
