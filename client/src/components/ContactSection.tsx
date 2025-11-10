@@ -120,7 +120,7 @@ export default function ContactSection() {
               />
             </div>
             
-            <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white" data-testid="button-contact-submit">
+            <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white rounded-full" data-testid="button-contact-submit">
               Join the Focus Group
             </Button>
             
