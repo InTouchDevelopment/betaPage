@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Vision', href: '#why' },
-    { name: 'Meet the Team', href: '#team' },
+    { name: 'Meet the Team', href: '#founder' },
     { name: 'Get Involved', href: '#contact' },
   ];
 
