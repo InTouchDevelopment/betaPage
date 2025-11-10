@@ -15,13 +15,13 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="text-sm font-semibold tracking-wide uppercase text-primary mb-4" data-testid="text-hero-label">
-              Innovation Redefined
+              Welcome Home
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" data-testid="text-hero-title">
               Meet the Product
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl mb-8" data-testid="text-hero-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              We're delighted you're here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our passion is creating something truly special that brings joy and simplicity to your everyday life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -44,10 +44,10 @@ export default function HeroSection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl shadow-2xl aspect-[4/3] flex items-center justify-center" data-testid="container-hero-image">
+            <div className="bg-gradient-to-br from-primary/20 via-accent/30 to-primary/10 rounded-3xl shadow-2xl aspect-[4/3] flex items-center justify-center" data-testid="container-hero-image">
               <div className="text-center p-8">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/20"></div>
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/30"></div>
                 </div>
                 <p className="text-muted-foreground">Product Visualization</p>
               </div>

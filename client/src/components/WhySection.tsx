@@ -8,20 +8,20 @@ export default function WhySection() {
         
         <div className="space-y-6">
           <p className="text-xl leading-relaxed" data-testid="text-why-intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            We believe everyone deserves something wonderful. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our journey started with a simple dream of making life a little brighter.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-1">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Every day, we pour our hearts into creating experiences that feel like coming home. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We're building this with care, thoughtfulness, and a genuine desire to make a positive difference in your world.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-2">
-            Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            Our team wakes up excited to build something meaningful together. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. We're here because we genuinely care about creating value for you and your community.
           </p>
           
           <div className="border-l-4 border-primary pl-6 py-2 my-8" data-testid="container-why-quote">
             <p className="text-xl italic text-foreground">
-              "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+              "Building with heart, creating with purpose, serving with joy."
             </p>
           </div>
         </div>

@@ -21,10 +21,10 @@ export default function SignUpSection() {
     <section id="signup" className="py-16 md:py-24 lg:py-32">
       <div className="max-w-2xl mx-auto px-6 md:px-8 lg:px-12 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-signup-title">
-          Sign Up
+          Join Our Community
         </h2>
         <p className="text-lg text-muted-foreground mb-8" data-testid="text-signup-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Join thousands of users who are already experiencing the difference.
+          Ready to be part of something special? Join thousands of happy users who have already discovered the joy we bring. We can't wait to welcome you!
         </p>
         
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 mb-4">

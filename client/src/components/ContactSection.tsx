@@ -33,9 +33,9 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-6">Get in Touch</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-6">We'd Love to Hear from You</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                Have questions or just want to chat? We're always here and happy to connect. Drop us a message and we'll get back to you with a smile!
               </p>
             </div>
             
