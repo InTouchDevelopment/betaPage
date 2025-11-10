@@ -34,7 +34,7 @@ export default function FounderMessage() {
           </div>
           
           <div className="mt-12 flex justify-center">
-            <div className="w-full max-w-md aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-dashed border-primary/30 flex items-center justify-center" data-testid="container-founder-image">
+            <div className="w-full max-w-md aspect-square rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border flex items-center justify-center shadow-sm" data-testid="container-founder-image">
               <p className="text-muted-foreground text-center px-8">Founder Photo Placeholder</p>
             </div>
           </div>

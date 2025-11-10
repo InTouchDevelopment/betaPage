@@ -56,14 +56,14 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
-              className="group hover-elevate transition-all duration-300 hover:scale-105 rounded-2xl"
+              className="group transition-all duration-300 hover:-translate-y-1 rounded-3xl"
               data-testid={`card-team-member-${index}`}
             >
-              <div className="aspect-square rounded-2xl overflow-hidden mb-4 shadow-lg">
+              <div className="aspect-square rounded-3xl overflow-hidden mb-4 shadow-md">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   data-testid={`img-member-${index}`}
                 />
               </div>

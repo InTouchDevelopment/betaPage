@@ -19,7 +19,7 @@ export default function WhySection() {
             Our goal is simple: to make it easier for professionals to feel seen, supported, and truly in touch—with themselves, with their colleagues, and with their teams. By building relationship capital, we help create thriving workplaces where people genuinely connect and grow together.
           </p>
           
-          <div className="border-l-4 border-primary pl-6 py-2 my-8" data-testid="container-why-quote">
+          <div className="relative border-l-4 border-accent pl-6 py-4 my-8 bg-gradient-to-r from-accent/5 to-transparent rounded-r-xl" data-testid="container-why-quote">
             <p className="text-xl italic text-foreground">
               "Making it easier for people to feel seen, supported, and truly in touch."
             </p>

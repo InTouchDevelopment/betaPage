@@ -35,7 +35,7 @@ export default function ContactSection() {
           </p>
         </div>
         
-        <div className="bg-card rounded-2xl shadow-lg p-8 md:p-12 mb-12">
+        <div className="bg-card rounded-3xl shadow-md border border-border p-8 md:p-12 mb-12">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -79,7 +79,7 @@ export default function ContactSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="space-y-2" data-testid="container-contact-email">
-            <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
+            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
               <Mail className="w-6 h-6 text-primary" />
             </div>
             <div className="font-semibold">Email</div>
@@ -89,7 +89,7 @@ export default function ContactSection() {
           </div>
           
           <div className="space-y-2" data-testid="container-contact-phone">
-            <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
+            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
               <Phone className="w-6 h-6 text-primary" />
             </div>
             <div className="font-semibold">Phone</div>
@@ -99,7 +99,7 @@ export default function ContactSection() {
           </div>
           
           <div className="space-y-2" data-testid="container-contact-address">
-            <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
+            <div className="w-14 h-14 mx-auto rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3">
               <MapPin className="w-6 h-6 text-primary" />
             </div>
             <div className="font-semibold">Address</div>

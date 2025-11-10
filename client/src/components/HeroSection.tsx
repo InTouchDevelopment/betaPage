@@ -26,10 +26,11 @@ export default function HeroSection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="bg-gradient-to-br from-primary/20 via-accent/30 to-primary/10 rounded-3xl shadow-2xl aspect-[4/3] flex items-center justify-center" data-testid="container-hero-image">
-              <div className="text-center p-8">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/30"></div>
+            <div className="relative bg-gradient-to-br from-primary/5 via-accent/5 to-primary/10 rounded-3xl shadow-lg aspect-[4/3] flex items-center justify-center overflow-hidden" data-testid="container-hero-image">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
+              <div className="relative text-center p-8">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/30 to-accent/30"></div>
                 </div>
                 <p className="text-muted-foreground">Product Visualization</p>
               </div>
