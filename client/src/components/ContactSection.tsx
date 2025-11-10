@@ -99,6 +99,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
+                className="bg-muted/50 border-border/50"
                 data-testid="input-contact-name"
               />
             </div>
@@ -114,6 +115,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
+                className="bg-muted/50 border-border/50"
                 data-testid="input-contact-email"
               />
             </div>
