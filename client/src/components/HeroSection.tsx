@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
-              Helping Busy Professionals Authentically Connect
+              Helping Busy Professionals <span className="text-accent">Authentically Connect</span>
             </h1>
             <p className="text-2xl md:text-3xl font-semibold text-foreground" data-testid="text-hero-description">
               Build Relationship Capital and Boost Wellness
