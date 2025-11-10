@@ -3,7 +3,7 @@ export default function WhySection() {
     <section id="why" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-why-title">
-          Why We're Building [Product Name]
+          Vision
         </h2>
         
         <div className="space-y-6">
@@ -19,7 +19,7 @@ export default function WhySection() {
             Our goal is simple: to make it easier for professionals to feel seen, supported, and truly in touch—with themselves, with their colleagues, and with their teams. By building relationship capital, we help create thriving workplaces where people genuinely connect and grow together.
           </p>
           
-          <div className="relative pl-6 py-6 my-8 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent rounded-3xl border-l-4 border-accent" data-testid="container-why-quote">
+          <div className="relative pl-6 py-6 my-8 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent border-l-4 border-accent" data-testid="container-why-quote">
             <p className="text-xl italic text-foreground">
               "Making it easier for people to feel seen, supported, and truly in touch."
             </p>
