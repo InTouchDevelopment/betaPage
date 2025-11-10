@@ -46,7 +46,7 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section id="team" className="py-16 md:py-24 lg:py-32">
+    <section id="team" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-16" data-testid="text-team-title">
           Meet the Team

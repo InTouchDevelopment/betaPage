@@ -1,6 +1,6 @@
 export default function WhySection() {
   return (
-    <section id="why" className="py-16 md:py-24 lg:py-32 bg-muted/30">
+    <section id="why" className="py-16 md:py-24 lg:py-32">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-why-title">
           Why We're Building [Product Name]

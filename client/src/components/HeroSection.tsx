@@ -14,36 +14,15 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
-            <div className="text-sm font-semibold tracking-wide uppercase text-primary mb-4" data-testid="text-hero-label">
-              Workplace Wellness & Professional Development
-            </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
               Helping Busy Professionals Authentically Connect
             </h1>
             <p className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Build Relationship Capital and Boost Wellness
             </p>
-            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl mb-8" data-testid="text-hero-description">
+            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl" data-testid="text-hero-description">
               In today's fast-paced workplace, professionals struggle to build and sustain authentic relationships. At [Product Name], we're reimagining how technology facilitates genuine human connection—transforming everyday interactions into opportunities for empathy, belonging, and thriving teams.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg"
-                onClick={() => scrollToSection('#contact')}
-                data-testid="button-hero-primary"
-              >
-                Get Involved
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => scrollToSection('#why')}
-                data-testid="button-hero-secondary"
-              >
-                Learn More
-              </Button>
-            </div>
           </div>
           
           <div className="order-1 lg:order-2">

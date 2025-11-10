@@ -1,6 +1,6 @@
 export default function FounderMessage() {
   return (
-    <section id="founder" className="py-16 md:py-24 lg:py-32">
+    <section id="founder" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-16" data-testid="text-founder-title">
           Message from the Founder
@@ -27,10 +27,16 @@ export default function FounderMessage() {
             </p>
           </div>
           
-          <div className="text-right pt-4">
+          <div className="text-right pt-4 mb-12">
             <p className="text-lg font-medium italic" data-testid="text-founder-signature">
               — Niten Luthra, Founder
             </p>
+          </div>
+          
+          <div className="mt-12 flex justify-center">
+            <div className="w-full max-w-md aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-dashed border-primary/30 flex items-center justify-center" data-testid="container-founder-image">
+              <p className="text-muted-foreground text-center px-8">Founder Photo Placeholder</p>
+            </div>
           </div>
         </div>
       </div>

@@ -6,11 +6,9 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Meet the Product', href: '#product' },
-    { name: "Why We're Building", href: '#why' },
-    { name: 'Meet the Team', href: '#team' },
-    { name: 'Message from Founder', href: '#founder' },
-    { name: 'Want to Get Involved', href: '#contact' },
+    { name: 'Vision', href: '#why' },
+    { name: 'About', href: '#team' },
+    { name: 'Get Involved', href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
