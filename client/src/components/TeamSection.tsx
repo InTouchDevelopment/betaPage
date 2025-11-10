@@ -46,35 +46,58 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section id="team" className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24 bg-muted/30">
+    <section id="team" className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24 bg-muted/50">
       <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-team-title">
-          Meet the Team
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16" data-testid="text-team-title">
+          The Team
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
-          {teamMembers.map((member, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          {teamMembers.slice(0, 3).map((member, index) => (
             <div 
               key={index} 
-              className="group transition-all duration-300 hover:-translate-y-1"
+              className="bg-background rounded-3xl p-8 text-center shadow-sm border border-border/50 transition-all duration-300 hover:-translate-y-1"
               data-testid={`card-team-member-${index}`}
             >
-              <div className="aspect-square rounded-2xl overflow-hidden mb-3 shadow-md">
+              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-primary/10">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover"
                   data-testid={`img-member-${index}`}
                 />
               </div>
-              <div className="text-center">
-                <h3 className="text-sm font-semibold mb-0.5" data-testid={`text-member-name-${index}`}>
-                  {member.name}
-                </h3>
-                <p className="text-xs text-primary" data-testid={`text-member-role-${index}`}>
-                  {member.role}
-                </p>
+              <h3 className="text-xl font-bold mb-2" data-testid={`text-member-name-${index}`}>
+                {member.name}
+              </h3>
+              <p className="text-base text-muted-foreground" data-testid={`text-member-role-${index}`}>
+                {member.role}
+              </p>
+            </div>
+          ))}
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {teamMembers.slice(3, 6).map((member, index) => (
+            <div 
+              key={index + 3} 
+              className="bg-background rounded-3xl p-8 text-center shadow-sm border border-border/50 transition-all duration-300 hover:-translate-y-1"
+              data-testid={`card-team-member-${index + 3}`}
+            >
+              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-primary/10">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                  data-testid={`img-member-${index + 3}`}
+                />
               </div>
+              <h3 className="text-xl font-bold mb-2" data-testid={`text-member-name-${index + 3}`}>
+                {member.name}
+              </h3>
+              <p className="text-base text-muted-foreground" data-testid={`text-member-role-${index + 3}`}>
+                {member.role}
+              </p>
             </div>
           ))}
         </div>
