@@ -2,7 +2,7 @@ import founderPhoto from '@assets/image_1762743706876.png';
 
 export default function FounderMessage() {
   return (
-    <section id="founder" className="py-16 md:py-24 lg:py-32 bg-muted/30">
+    <section id="founder" className="pt-16 md:pt-24 lg:pt-32 pb-8 md:pb-12 lg:pb-16 bg-muted/30">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-founder-title">
           A Message from the Founder
@@ -36,12 +36,6 @@ export default function FounderMessage() {
             
             <p data-testid="text-founder-para-3">
               I hope this platform brings as much connection and joy to your life as it has brought purpose to ours in creating it. Here's to staying truly in touch.
-            </p>
-          </div>
-          
-          <div className="text-right pt-4">
-            <p className="text-lg font-medium italic" data-testid="text-founder-signature">
-              — Niten Luthra, Founder
             </p>
           </div>
         </div>
