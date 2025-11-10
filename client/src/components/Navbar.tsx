@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-lg border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="text-xl md:text-2xl font-bold">
@@ -74,7 +74,7 @@ export default function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-lg">
           <div className="px-6 py-4 space-y-3">
             {navLinks.map((link) => (
               <a
