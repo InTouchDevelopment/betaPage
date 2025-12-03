@@ -6,9 +6,9 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Vision', href: '#why' },
-    { name: 'Meet the Team', href: '#founder' },
-    { name: 'Get Involved', href: '#contact' },
+    { name: 'Why It Matters', href: '#why' },
+    { name: 'How It Works', href: '#how' },
+    { name: 'Our Story', href: '#founder' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -36,7 +36,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -51,6 +51,13 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            <Button
+              onClick={() => scrollToSection('#waitlist')}
+              className="bg-accent hover:bg-accent/90 text-white rounded-full font-semibold px-6"
+              data-testid="button-nav-waitlist"
+            >
+              Join Waitlist
+            </Button>
           </div>
 
           <button
@@ -80,6 +87,13 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            <Button
+              onClick={() => scrollToSection('#waitlist')}
+              className="w-full bg-accent hover:bg-accent/90 text-white rounded-full font-semibold mt-2"
+              data-testid="button-mobile-waitlist"
+            >
+              Join Waitlist
+            </Button>
           </div>
         </div>
       )}

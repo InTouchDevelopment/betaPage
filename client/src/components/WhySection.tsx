@@ -2,26 +2,26 @@ export default function WhySection() {
   return (
     <section id="why" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12" data-testid="text-why-title">
-          Vision
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12" data-testid="text-why-title">
+          Why It Matters
         </h2>
         
-        <div className="space-y-6">
-          <p className="text-xl leading-relaxed" data-testid="text-why-intro">
-            In today's fast-paced world, busy professionals are struggling to build, grow, and sustain authentic relationships. As a result, feelings of loneliness and isolation are rising—bringing with them serious physical and mental health risks that impact both personal wellbeing and workplace productivity.
+        <div className="space-y-6 text-center">
+          <p className="text-xl md:text-2xl font-semibold text-foreground" data-testid="text-why-intro">
+            Your greatest source of wellbeing is relationship capital.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-1">
-            At Nithen AI, we're reimagining how technology can facilitate and nurture genuine human connection. In a world where people are more digitally linked yet emotionally distant, our platform bridges that gap—transforming everyday workplace interactions into opportunities for empathy and belonging.
+            Studies show that strong human connection improves happiness, resilience, and even longevity.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-2">
-            Our goal is simple: to make it easier for professionals to feel seen, supported, and truly in touch—with themselves, with their colleagues, and with their teams. By building relationship capital, we help create thriving workplaces where people genuinely connect and grow together.
+            Yet most of us lose touch not because we don't care — but because life gets busy.
           </p>
           
-          <div className="relative pl-6 py-6 my-8 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent border-l-4 border-accent" data-testid="container-why-quote">
-            <p className="text-xl italic text-foreground">
-              "Making it easier for people to feel seen, supported, and truly in touch."
+          <div className="pt-6">
+            <p className="text-xl md:text-2xl font-semibold text-foreground" data-testid="text-why-conclusion">
+              Nithen helps you protect and grow the connections that make life meaningful.
             </p>
           </div>
         </div>
