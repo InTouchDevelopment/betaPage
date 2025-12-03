@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-16 md:pt-20">
         <HeroSection />
         <WhySection />
         <HowSection />

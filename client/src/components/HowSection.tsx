@@ -1,54 +1,87 @@
-import { Users, UserPlus, Lightbulb, Bell, Brain, Heart } from 'lucide-react';
+import { Users, UserPlus, Lightbulb, Bell, Brain, Heart, ArrowRight } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 export default function HowSection() {
-  const features = [
+  const steps = [
     {
+      number: '01',
       icon: Users,
-      text: 'AI helps you set up your personal network — so your most important people stay top of mind.',
+      title: 'Build Your Circle',
+      description: 'AI helps you set up your personal network — so your most important people stay top of mind.',
     },
     {
+      number: '02',
       icon: UserPlus,
-      text: 'Shows you who to add as your life evolves, keeping your circle rich and relevant.',
+      title: 'Evolve Together',
+      description: 'Shows you who to add as your life evolves, keeping your circle rich and relevant.',
     },
     {
+      number: '03',
       icon: Lightbulb,
-      text: 'Offers thoughtful connection recommendations that take the guesswork out of staying close.',
+      title: 'Smart Suggestions',
+      description: 'Offers thoughtful connection recommendations that take the guesswork out of staying close.',
     },
     {
+      number: '04',
       icon: Bell,
-      text: 'Gently nudges you at the right times so you reconnect naturally, not out of guilt or obligation.',
+      title: 'Gentle Reminders',
+      description: 'Nudges you at the right times so you reconnect naturally, not out of guilt or obligation.',
     },
     {
+      number: '05',
       icon: Brain,
-      text: 'Reduces the mental load of keeping up — because connection shouldn\'t feel like another task.',
+      title: 'Reduce Mental Load',
+      description: 'Because connection shouldn\'t feel like another task on your to-do list.',
     },
     {
+      number: '06',
       icon: Heart,
-      text: 'Strengthens your relationships over time, making your life more supported, grounded, and meaningful.',
+      title: 'Deepen Bonds',
+      description: 'Strengthens your relationships over time, making your life more supported and meaningful.',
     },
   ];
 
   return (
-    <section id="how" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-accent/5 via-background to-primary/5">
-      <div className="max-w-5xl mx-auto px-6 md:px-8 lg:px-12">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12" data-testid="text-how-title">
-          How Nithen Supports You
-        </h2>
+    <section id="how" className="py-20 md:py-28 lg:py-36 bg-gradient-to-br from-accent/5 via-background to-primary/5">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
+        <div className="text-center mb-16">
+          <p className="text-accent font-medium mb-3 tracking-wide uppercase text-sm" data-testid="text-how-label">
+            How It Works
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-testid="text-how-title">
+            Your AI-Powered
+            <br />
+            <span className="text-accent">Relationship Assistant</span>
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="text-how-intro">
+            Nithen makes staying connected feel effortless, not overwhelming.
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((feature, index) => (
-            <div 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {steps.map((step, index) => (
+            <Card 
               key={index}
-              className="flex gap-4 p-6 bg-background rounded-2xl border border-border/50 shadow-sm"
-              data-testid={`card-feature-${index}`}
+              className="group p-6 border-border/50 hover:border-accent/30 hover:-translate-y-1 transition-all duration-300 relative overflow-visible"
+              data-testid={`card-step-${index}`}
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-primary/15 flex items-center justify-center">
-                <feature.icon className="w-6 h-6 text-accent" />
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/15 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <step.icon className="w-7 h-7 text-accent" />
+                  </div>
+                </div>
+                <div className="flex-1 pt-1">
+                  <span className="text-xs font-bold text-accent/60 tracking-wider">{step.number}</span>
+                  <h3 className="text-lg font-semibold mb-2 mt-1" data-testid={`text-step-title-${index}`}>
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed" data-testid={`text-step-desc-${index}`}>
+                    {step.description}
+                  </p>
+                </div>
               </div>
-              <p className="text-foreground leading-relaxed pt-2" data-testid={`text-feature-${index}`}>
-                {feature.text}
-              </p>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

@@ -9,58 +9,60 @@ const teamMembers = [
   {
     name: 'Sarah Johnson',
     role: 'Chief Executive Officer',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: member1,
   },
   {
     name: 'Michael Chen',
     role: 'Chief Technology Officer',
-    bio: 'Sed do eiusmod tempor incididunt ut labore et dolore.',
     image: member2,
   },
   {
     name: 'Emily Rodriguez',
     role: 'Head of Product',
-    bio: 'Ut enim ad minim veniam, quis nostrud exercitation.',
     image: member3,
   },
   {
     name: 'David Kim',
     role: 'Lead Designer',
-    bio: 'Duis aute irure dolor in reprehenderit in voluptate.',
     image: member4,
   },
   {
     name: 'Jessica Taylor',
     role: 'Head of Marketing',
-    bio: 'Excepteur sint occaecat cupidatat non proident.',
     image: member5,
   },
   {
     name: 'James Anderson',
     role: 'VP of Engineering',
-    bio: 'Sunt in culpa qui officia deserunt mollit anim.',
     image: member6,
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section id="team" className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      <div className="max-w-5xl mx-auto px-6 md:px-8 lg:px-12">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16" data-testid="text-team-title">
-          The Team
-        </h2>
+    <section id="team" className="py-20 md:py-28 lg:py-36 bg-gradient-to-b from-background via-muted/20 to-background">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
+        <div className="text-center mb-16">
+          <p className="text-accent font-medium mb-3 tracking-wide uppercase text-sm" data-testid="text-team-label">
+            The People Behind Nithen
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-testid="text-team-title">
+            Meet Our Team
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-team-intro">
+            A passionate group dedicated to making human connection easier.
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col items-center text-center"
               data-testid={`card-team-member-${index}`}
             >
-              <div className="w-48 h-48 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-accent/15 to-primary/15 p-1">
-                <div className="w-full h-full rounded-full overflow-hidden bg-background">
+              <div className="relative mb-5">
+                <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden ring-2 ring-border group-hover:ring-accent/50 transition-all duration-300 group-hover:scale-105">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -69,10 +71,10 @@ export default function TeamSection() {
                   />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold mb-1" data-testid={`text-member-name-${index}`}>
+              <h3 className="text-base md:text-lg font-semibold mb-1" data-testid={`text-member-name-${index}`}>
                 {member.name}
               </h3>
-              <p className="text-sm text-muted-foreground" data-testid={`text-member-role-${index}`}>
+              <p className="text-sm text-accent font-medium" data-testid={`text-member-role-${index}`}>
                 {member.role}
               </p>
             </div>
