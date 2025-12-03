@@ -1,4 +1,4 @@
-import member1 from '@assets/team/niten.png';
+import founderPhoto from '@assets/image_1762743706876.png';
 import member2 from '@assets/team/ishana.jpg';
 import member3 from '@assets/team/Vibha.jpg';
 import member4 from '@assets/team/ahmed.png';
@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: 'Niten Luthra',
     role: 'Founder & CEO',
-    image: member1,
+    image: founderPhoto,
   },
   {
     name: 'Ishana Datusalia',
