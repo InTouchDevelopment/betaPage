@@ -5,7 +5,7 @@ import App from "./App";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
-  <Router base="/betaPage">               {/* 👈 tell wouter about the base path */}
+  <Router>               {/* 👈 tell wouter about the base path */}
     <App />
   </Router>
 );
