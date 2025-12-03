@@ -1,39 +1,38 @@
-import member1 from '@assets/generated_images/Professional_team_member_headshot_1_e1ea877e.png';
-import member2 from '@assets/generated_images/Professional_team_member_headshot_2_72aed258.png';
-import member3 from '@assets/generated_images/Professional_team_member_headshot_3_2cd8ab3d.png';
-import member4 from '@assets/generated_images/Professional_team_member_headshot_4_a67a4805.png';
-import member5 from '@assets/generated_images/Professional_team_member_headshot_5_926ed074.png';
-import member6 from '@assets/generated_images/Professional_team_member_headshot_6_689a2ead.png';
-
+import member1 from '@assets/team/niten.png';
+import member2 from '@assets/team/ishana.png';
+import member3 from '@assets/team/Vibha.png';
+import member4 from '@assets/team/ahmed.png';
+import member5 from '@assets/team/wesley.png';
+import member6 from '@assets/team/anita.png';
 const teamMembers = [
   {
-    name: 'Sarah Johnson',
-    role: 'Chief Executive Officer',
+    name: 'Niten Luthra',
+    role: 'Founder & CEO',
     image: member1,
   },
   {
-    name: 'Michael Chen',
-    role: 'Chief Technology Officer',
+    name: 'Ishana Datusalia',
+    role: 'Design',
     image: member2,
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Head of Product',
+    name: 'Vibha Doddipalle',
+    role: 'Marketing',
     image: member3,
   },
   {
-    name: 'David Kim',
-    role: 'Lead Designer',
+    name: 'Ahmed Elghazi',
+    role: 'Tech',
     image: member4,
   },
   {
-    name: 'Jessica Taylor',
-    role: 'Head of Marketing',
+    name: 'Wesley Kennedy',
+    role: 'Finance / Business Ideation',
     image: member5,
   },
   {
-    name: 'James Anderson',
-    role: 'VP of Engineering',
+    name: 'Anita Arvello',
+    role: 'Mental Health',
     image: member6,
   },
 ];
