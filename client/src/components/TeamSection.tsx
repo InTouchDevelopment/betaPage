@@ -2,8 +2,8 @@ import member1 from '@assets/team/niten.png';
 import member2 from '@assets/team/ishana.jpg';
 import member3 from '@assets/team/Vibha.jpg';
 import member4 from '@assets/team/ahmed.png';
-import member5 from '@assets/team/wesley.png';
-import member6 from '@assets/team/anita.png';
+import member5 from '@assets/team/Wesley.png';
+import member6 from '@assets/team/Anita.png';
 const teamMembers = [
   {
     name: 'Niten Luthra',
