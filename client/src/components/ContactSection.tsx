@@ -51,7 +51,7 @@ export default function ContactSection() {
     {
       icon: Users,
       title: 'Early Access',
-      description: 'Be among the first to experience [Product Name]',
+      description: 'Be among the first to experience Nithen AI',
     },
     {
       icon: Heart,

@@ -32,7 +32,7 @@ export default function Navbar() {
               }}
               data-testid="link-logo"
             >
-              [Product Name]
+              Nithen AI
             </a>
           </div>
 

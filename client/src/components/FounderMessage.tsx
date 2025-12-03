@@ -33,7 +33,7 @@ export default function FounderMessage() {
             </p>
             
             <p data-testid="text-founder-para-2">
-              [Product Name] was born from that question. We're building a platform that facilitates authentic connection through a low-cognitive wellbeing display—allowing people to share how they're doing and gain meaningful insights into their network without the overwhelming time commitment. It's about making relationship-building as intentional as any other investment in your life.
+              Nithen AI was born from that question. We're building a platform that facilitates authentic connection through a low-cognitive wellbeing display—allowing people to share how they're doing and gain meaningful insights into their network without the overwhelming time commitment. It's about making relationship-building as intentional as any other investment in your life.
             </p>
             
             <p data-testid="text-founder-para-3">

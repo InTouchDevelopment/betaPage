@@ -12,7 +12,7 @@ export default function WhySection() {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-1">
-            At [Product Name], we're reimagining how technology can facilitate and nurture genuine human connection. In a world where people are more digitally linked yet emotionally distant, our platform bridges that gap—transforming everyday workplace interactions into opportunities for empathy and belonging.
+            At Nithen AI, we're reimagining how technology can facilitate and nurture genuine human connection. In a world where people are more digitally linked yet emotionally distant, our platform bridges that gap—transforming everyday workplace interactions into opportunities for empathy and belonging.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-why-body-2">
